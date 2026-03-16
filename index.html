@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Botics</title>
+    <title>Apex Botics | Robotics Excellence</title>
     <style>
         :root {
-            --apex-red: #ff3131;
-            --bg-dark: #0a0a0a;
+            --neon-red: #ff3131;
+            --soft-black: #0a0a0a;
             --card-bg: #161616;
+            --premium-gray: #222222;
             --radius: 18px;
         }
 
         body {
-            background-color: var(--bg-dark);
-            color: #ffffff;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--soft-black);
+            color: #ffffff;
             margin: 0;
-            text-align: center;
+            line-height: 1.6;
             -webkit-font-smoothing: antialiased;
+            text-align: center;
         }
 
         header {
             padding: 120px 20px;
-            background: linear-gradient(180deg, #1f0000 0%, var(--bg-dark) 100%);
-            border-bottom: 2px solid var(--apex-red);
+            background: radial-gradient(circle at center, #2a0000 0%, var(--soft-black) 70%);
+            border-bottom: 2px solid var(--neon-red);
         }
 
         h1 {
             font-size: 3.5rem;
-            letter-spacing: 12px;
             margin: 0;
+            letter-spacing: 12px;
             text-transform: uppercase;
-            font-weight: 900;
+            font-weight: 800;
+        }
+
+        .tagline {
+            color: var(--neon-red);
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: block;
         }
 
         .container {
@@ -45,52 +57,51 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
+            margin-bottom: 60px;
         }
 
         .card {
             background: var(--card-bg);
+            border: 1px solid var(--premium-gray);
             padding: 40px 30px;
             border-radius: var(--radius);
-            border: 1px solid #222;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: default;
         }
 
         /* Hover Effect for Cards */
         .card:hover {
-            border-color: var(--apex-red);
+            border-color: var(--neon-red);
             transform: translateY(-10px);
             background: #1c1c1c;
-            box-shadow: 0 10px 30px rgba(255, 49, 49, 0.15);
+            box-shadow: 0 15px 30px rgba(255, 49, 49, 0.2);
         }
 
         .card h3 {
-            color: var(--apex-red);
+            margin-top: 0;
+            color: var(--neon-red);
             text-transform: uppercase;
-            letter-spacing: 2px;
             font-size: 1.4rem;
-            margin-bottom: 15px;
+            letter-spacing: 2px;
         }
 
         .card p {
             color: #aaaaaa;
-            line-height: 1.5;
             font-size: 1rem;
         }
 
         .btn {
             display: inline-block;
-            background: var(--apex-red);
+            background: var(--neon-red);
             color: white;
             padding: 18px 50px;
             text-decoration: none;
-            border-radius: 50px;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 50px;
+            border-radius: 50px;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
+            letter-spacing: 2px;
+            margin-top: 20px;
         }
 
         /* Hover Effect for Button */
@@ -98,13 +109,15 @@
             transform: scale(1.05);
             background: #ffffff;
             color: #000000;
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
         }
 
         footer {
-            padding: 80px 20px;
+            text-align: center;
+            padding: 80px;
             color: #444;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
             letter-spacing: 2px;
         }
     </style>
@@ -112,8 +125,9 @@
 <body>
 
 <header>
+    <span class="tagline">Apex Botics Laboratory</span>
     <h1>APEX BOTICS</h1>
-    <p style="color: #666; margin-top: 15px; font-size: 1.1rem; letter-spacing: 1px;">Next-Generation Engineering</p>
+    <p style="color: #888; font-size: 1.1rem; margin-top: 15px;">Engineering the Future of Robotics</p>
 </header>
 
 <div class="container">
@@ -123,3 +137,21 @@
             <p>Master the fundamentals of hardware logic and environmental interaction.</p>
         </div>
         <div class="card">
+            <h3>Apex Beta</h3>
+            <p>Build advanced systems with precise motor control and sensor feedback.</p>
+        </div>
+        <div class="card">
+            <h3>Apex Prime</h3>
+            <p>Deploy fully autonomous logic and intelligent navigation systems.</p>
+        </div>
+    </div>
+
+    <a href="mailto:your-email@example.com" class="btn">Initialize Contact</a>
+</div>
+
+<footer>
+    &copy; 2026 APEX BOTICS | REDMOND, WA
+</footer>
+
+</body>
+</html>
