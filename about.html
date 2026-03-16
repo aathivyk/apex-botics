@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Founder | Apex Botics</title>
+    <style>
+        :root { --red: #ff3131; --bg: #0a0a0a; --card: #161616; --radius: 18px; }
+        body { background: var(--bg); color: white; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; -webkit-font-smoothing: antialiased; text-align: center; }
+        
+        header { padding: 60px 20px 40px; background: radial-gradient(circle at center, #220000 0%, var(--bg) 70%); }
+        h1 { font-size: 2.2rem; color: var(--red); text-transform: uppercase; letter-spacing: 5px; margin: 0; }
+        
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; display: flex; align-items: flex-start; gap: 40px; text-align: left; }
+        
+        .img-container { flex: 0 0 400px; border-radius: var(--radius); border: 1px solid var(--red); overflow: hidden; box-shadow: 0 0 30px rgba(255, 49, 49, 0.2); }
+        .img-container img { width: 100%; height: auto; display: block; }
+
+        .text-box { flex: 1; background: var(--card); padding: 40px; border-radius: var(--radius); border: 1px solid #222; }
+        h2 { text-transform: uppercase; font-size: 1.1rem; letter-spacing: 2px; border-left: 3px solid var(--red); padding-left: 15px; margin-top: 0; }
+        p { color: #aaaaaa; margin-bottom: 25px; }
+        .slam-tag { font-family: 'Courier New', Courier, monospace; background: #000; color: #ff9900; padding: 5px 10px; border-radius: 4px; font-weight: bold; border: 1px solid #ff9900; font-size: 0.9rem; margin-right: 10px; display: inline-block; }
+
+        .back-btn { display: inline-block; margin-top: 40px; color: #666; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
+        .back-btn:hover { color: var(--red); transform: translateX(-5px); transition: 0.3s ease; }
+
+        /* Responsive Mobile Layout */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; align-items: center; }
+            .img-container { flex: 0 0 100%; width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About the Founder</h1>
+    <p style="color: #666;">Engineering Excellence & Award-Winning Innovation</p>
+</header>
+
+<div class="container">
+    <div class="img-container">
+        <img src="your-picture.jpg" alt="Apex Botics Founder with SLAM Project and Trophy" width="400" height="300">
+    </div>
+
+    <div class="text-box">
+        <h2>Award-Winning Robotics</h2>
+        <p>Apex Botics was born from a passion for solving complex autonomous problems. This approach culminated in our founding vision, recognized for engineering innovation at a national level.</p>
+        
+        <p>By implementing professional-grade SLAM (Simultaneous Localization and Mapping) with a specialized sensor array, our autonomous system navigated complex environments with high precision. This achievement secured the top award in a Canadian engineering and programming competition.</p>
+        
+        <p>
+            <span class="slam-tag">SLAM Certified</span>
+            <span class="slam-tag">Autonomous Specialist</span>
+        </p>
+
+        <p>This same dedication to practical, advanced engineering is the engine that drives Apex Botics. Our goal is to train the next generation of engineers to build, code, and deploy intelligent robotic systems.</p>
+        
+        <center><a href="index.html" class="back-btn">← Back to Command Center</a></center>
+    </div>
+</div>
+
+</body>
+</html>
