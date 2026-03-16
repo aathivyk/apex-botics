@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Apex Botics</title>
+    <title>About Aathi | Apex Botics</title>
     <style>
         :root { --red: #ff3131; --bg: #0a0a0a; --card: #161616; --radius: 18px; }
-        body { background: var(--bg); color: white; font-family: sans-serif; margin: 0; line-height: 1.6; text-align: center; }
-        .hero { padding: 60px 20px; background: #1a0000; border-bottom: 2px solid var(--red); }
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; display: flex; flex-wrap: wrap; gap: 30px; text-align: left; }
-        .img-box { flex: 1; min-width: 300px; border: 1px solid var(--red); border-radius: var(--radius); overflow: hidden; }
+        body { background: var(--bg); color: white; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; text-align: center; }
+        .hero { padding: 80px 20px; background: linear-gradient(180deg, #220000 0%, var(--bg) 100%); border-bottom: 2px solid var(--red); }
+        .container { max-width: 1000px; margin: -40px auto 50px; padding: 20px; display: flex; flex-wrap: wrap; gap: 40px; text-align: left; }
+        .img-box { flex: 1; min-width: 320px; border: 1px solid var(--red); border-radius: var(--radius); overflow: hidden; box-shadow: 0 0 30px rgba(255, 49, 49, 0.2); }
         .img-box img { width: 100%; height: auto; display: block; }
-        .text-box { flex: 1.5; min-width: 300px; background: var(--card); padding: 30px; border-radius: var(--radius); border: 1px solid #222; }
-        h1 { color: var(--red); letter-spacing: 4px; text-transform: uppercase; }
-        h2 { font-size: 1rem; color: #fff; text-transform: uppercase; border-bottom: 1px solid var(--red); padding-bottom: 5px; }
-        p { color: #aaa; }
-        .back-btn { display: inline-block; margin-top: 20px; color: #666; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; }
-        .back-btn:hover { color: var(--red); }
+        .text-box { flex: 1.5; min-width: 320px; background: var(--card); padding: 40px; border-radius: var(--radius); border: 1px solid #222; }
+        h1 { color: var(--red); text-transform: uppercase; letter-spacing: 5px; margin: 0; font-size: 2.2rem; }
+        h2 { font-size: 1.1rem; color: #fff; text-transform: uppercase; letter-spacing: 2px; border-left: 3px solid var(--red); padding-left: 15px; margin-top: 0; }
+        p { color: #aaa; margin-bottom: 20px; }
+        .back-btn { display: inline-block; margin-top: 30px; color: #666; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; transition: 0.3s; }
+        .back-btn:hover { color: var(--red); transform: translateX(-5px); }
     </style>
 </head>
 <body>
     <div class="hero">
-        <h1>ABOUT THE FOUNDER</h1>
+        <h1>AATHIVINAAYAK VINOTHUKUMAR SWAATHI</h1>
+        <p style="color: #888; margin-top: 10px;">Founder & Lead Engineer</p>
     </div>
     <div class="container">
         <div class="img-box">
-            <img src="founder.jpg" alt="Award Winning SLAM Project">
+            <img src="founder.jpg" alt="Aathi with SLAM Project">
         </div>
         <div class="text-box">
-            <h2>Award-Winning Innovation</h2>
-            <p>Apex Botics was founded following a national-level victory in a Canadian engineering competition.</p>
-            <p>The project utilized <strong>Simultaneous Localization and Mapping (SLAM)</strong> to achieve fully autonomous navigation, securing the top trophy for technical excellence.</p>
-            <p>Our mission is to bring this same high-level engineering logic to students, moving from basic builds to professional-grade autonomous systems.</p>
-            <a href="index.html" class="back-btn">← Back to Home</a>
+            <h2>Provincial Excellence</h2>
+            <p>Apex Botics was founded by Aathi following a significant achievement at the provincial level in a Canadian engineering competition.</p>
+            <p>By implementing <strong>Simultaneous Localization and Mapping (SLAM)</strong>, Aathi developed an autonomous system that successfully navigated complex environments, earning top honors for technical innovation and programming precision.</p>
+            <p>Now based in Redmond, WA, Aathi is dedicated to bringing this high-level engineering logic to the next generation of students through hands-on, hardware-first learning.</p>
+            <center><a href="index.html" class="back-btn">← Back to Command Center</a></center>
         </div>
     </div>
 </body>
