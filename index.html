@@ -60,21 +60,27 @@
             margin-bottom: 60px;
         }
 
+        /* Clicking the whole card now works */
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
         .card {
             background: var(--card-bg);
             border: 1px solid var(--premium-gray);
             padding: 40px 30px;
             border-radius: var(--radius);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            cursor: default;
+            height: 100%;
         }
 
-        /* Hover Effect for Cards */
         .card:hover {
             border-color: var(--neon-red);
             transform: translateY(-10px);
             background: #1c1c1c;
-            box-shadow: 0 15px 30px rgba(255, 49, 49, 0.2);
+            box-shadow: 0 15px 30px rgba(255, 49, 49, 0.3);
         }
 
         .card h3 {
@@ -104,7 +110,6 @@
             margin-top: 20px;
         }
 
-        /* Hover Effect for Button */
         .btn:hover {
             transform: scale(1.05);
             background: #ffffff;
@@ -113,7 +118,6 @@
         }
 
         footer {
-            text-align: center;
             padding: 80px;
             color: #444;
             font-size: 0.75rem;
@@ -132,21 +136,32 @@
 
 <div class="container">
     <div class="grid">
-        <div class="card">
-            <h3>Apex Alpha</h3>
-            <p>Master the fundamentals of hardware logic and environmental interaction.</p>
-        </div>
-        <div class="card">
-            <h3>Apex Beta</h3>
-            <p>Build advanced systems with precise motor control and sensor feedback.</p>
-        </div>
-        <div class="card">
-            <h3>Apex Prime</h3>
-            <p>Deploy fully autonomous logic and intelligent navigation systems.</p>
-        </div>
+        <a href="alpha.html" class="card-link">
+            <div class="card">
+                <h3>Apex Alpha</h3>
+                <p>Master the fundamentals of hardware logic and environmental interaction.</p>
+                <span style="color: var(--neon-red); font-size: 0.8rem;">LEARN MORE →</span>
+            </div>
+        </a>
+
+        <a href="beta.html" class="card-link">
+            <div class="card">
+                <h3>Apex Beta</h3>
+                <p>Build advanced systems with precise motor control and sensor feedback.</p>
+                <span style="color: var(--neon-red); font-size: 0.8rem;">LEARN MORE →</span>
+            </div>
+        </a>
+
+        <a href="prime.html" class="card-link">
+            <div class="card">
+                <h3>Apex Prime</h3>
+                <p>Deploy fully autonomous logic and intelligent navigation systems.</p>
+                <span style="color: var(--neon-red); font-size: 0.8rem;">LEARN MORE →</span>
+            </div>
+        </a>
     </div>
 
-    <a href="mailto:aathivyk@gmail.com" class="btn">Initialize Contact</a>
+    <a href="mailto:your-email@example.com" class="btn">Initialize Contact</a>
 </div>
 
 <footer>
