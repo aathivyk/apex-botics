@@ -6,43 +6,47 @@
     <title>Apex Botics | Robotics Excellence</title>
     <style>
         :root {
-            --neon-red: #ff0000;
-            --deep-red: #8b0000;
-            --bg-black: #050505;
-            --card-gray: #111111;
-            --border-gray: #222222;
+            --neon-red: #ff3131;
+            --soft-black: #0a0a0a;
+            --card-bg: #161616;
+            --premium-gray: #222222;
+            --radius: 16px;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-black);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--soft-black);
             color: #ffffff;
             margin: 0;
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
 
         header {
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
-            background: linear-gradient(to bottom, #1a0000, var(--bg-black));
-            border-bottom: 2px solid var(--neon-red);
+            background: radial-gradient(circle at center, #2a0000 0%, var(--soft-black) 70%);
         }
 
         h1 {
             font-size: 3.5rem;
             margin: 0;
-            letter-spacing: 10px;
+            letter-spacing: 12px;
             text-transform: uppercase;
-            color: #ffffff;
-            text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+            font-weight: 800;
+            background: linear-gradient(to bottom, #ffffff, #888888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .tagline {
             color: var(--neon-red);
-            font-weight: bold;
-            letter-spacing: 3px;
+            font-weight: 600;
+            letter-spacing: 4px;
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: block;
         }
 
         .container {
@@ -53,109 +57,66 @@
 
         h2 {
             text-transform: uppercase;
-            border-left: 4px solid var(--neon-red);
-            padding-left: 15px;
+            font-size: 1.5rem;
             margin-bottom: 30px;
             letter-spacing: 2px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::after {
+            content: "";
+            height: 2px;
+            background: var(--neon-red);
+            flex-grow: 1;
+            margin-left: 20px;
+            border-radius: 2px;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-bottom: 50px;
+            gap: 25px;
+            margin-bottom: 60px;
         }
 
         .card {
-            background: var(--card-gray);
-            border: 1px solid var(--border-gray);
-            padding: 25px;
-            transition: 0.3s;
+            background: var(--card-bg);
+            border: 1px solid var(--premium-gray);
+            padding: 30px;
+            border-radius: var(--radius);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .card:hover {
             border-color: var(--neon-red);
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.1);
+            transform: translateY(-8px);
+            background: #1c1c1c;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
         }
 
         .card h3 {
             margin-top: 0;
             color: var(--neon-red);
             text-transform: uppercase;
-            font-size: 1.2rem;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            padding: 8px 0;
-            border-bottom: 1px solid #222;
-            color: #ccc;
-        }
-
-        ul li::before {
-            content: "» ";
-            color: var(--neon-red);
+            font-size: 1.1rem;
+            letter-spacing: 1px;
         }
 
         .cta-box {
-            background: linear-gradient(45deg, #111, #200);
-            padding: 40px;
+            background: linear-gradient(145deg, #111111, #0a0a0a);
+            padding: 50px;
             text-align: center;
-            border: 1px solid var(--neon-red);
-            margin-top: 40px;
+            border-radius: var(--radius);
+            border: 1px solid var(--premium-gray);
+            margin-top: 50px;
         }
 
         .btn {
             display: inline-block;
             background: var(--neon-red);
             color: white;
-            padding: 15px 40px;
+            padding: 18px 45px;
             text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-radius: 2px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: white;
-            color: black;
-            box-shadow: 0 0 20px white;
-        }
-
-        footer {
-            text-align: center;
-            padding: 50px;
-            color: #444;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="tagline">Apex Botics Laboratory</div>
-    <h1>APEX</h1>
-    <p>Advanced Robotics & Autonomous Navigation Systems</p>
-</header>
-
-<div class="container">
-    
-    <h2>Project Curriculum</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Level 1: Fundamentals</h3>
-            <p>ESP32 Architecture, basic C++ programming, and LED/Sensor circuits.</p>
-        </div>
-        <div class="card">
-            <h3>Level 2: Locomotion</h3>
-            <p>Motor driver integration (L298N) and ultrasonic obstacle avoidance.</p>
-        </div>
-        <div class="card">
-            <h3>Level
+            font-weight: bold
