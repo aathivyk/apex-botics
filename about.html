@@ -9,10 +9,21 @@
         body { background: var(--bg); color: white; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; text-align: center; }
         .hero { padding: 80px 20px; background: linear-gradient(180deg, #220000 0%, var(--bg) 100%); border-bottom: 2px solid var(--red); }
         .container { max-width: 1000px; margin: -40px auto 50px; padding: 20px; display: flex; flex-wrap: wrap; gap: 40px; text-align: left; }
-        .img-box { flex: 1; min-width: 320px; border: 1px solid var(--red); border-radius: var(--radius); overflow: hidden; box-shadow: 0 0 30px rgba(255, 49, 49, 0.2); }
+        
+        .img-box { 
+            flex: 1; 
+            min-width: 320px; 
+            border: 1px solid var(--red); 
+            border-radius: var(--radius); 
+            overflow: hidden; 
+            box-shadow: 0 0 30px rgba(255, 49, 49, 0.2);
+            background: #111; 
+        }
         .img-box img { width: 100%; height: auto; display: block; }
+
         .text-box { flex: 1.5; min-width: 320px; background: var(--card); padding: 40px; border-radius: var(--radius); border: 1px solid #222; }
-        h1 { color: var(--red); text-transform: uppercase; letter-spacing: 5px; margin: 0; font-size: 2.2rem; }
+        h1 { color: var(--red); text-transform: uppercase; letter-spacing: 3px; margin: 0; font-size: 1.8rem; }
+        .nickname { color: #888; font-size: 1.2rem; display: block; margin-top: 5px; }
         h2 { font-size: 1.1rem; color: #fff; text-transform: uppercase; letter-spacing: 2px; border-left: 3px solid var(--red); padding-left: 15px; margin-top: 0; }
         p { color: #aaa; margin-bottom: 20px; }
         .back-btn { display: inline-block; margin-top: 30px; color: #666; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; transition: 0.3s; }
@@ -22,7 +33,7 @@
 <body>
     <div class="hero">
         <h1>AATHIVINAAYAK VINOTHUKUMAR SWAATHI</h1>
-        <p style="color: #888; margin-top: 10px;">Founder & Lead Engineer</p>
+        <span class="nickname">(Aathi :))</span>
     </div>
     <div class="container">
         <div class="img-box">
