@@ -5,29 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Apex Botics</title>
     <style>
-        body { background-color: black; color: white; font-family: 'Courier New', Courier, monospace; text-align: center; padding: 50px; }
-        h1 { color: #d9534f; margin-bottom: 30px; }
-        .info-box { border: 1px solid #333; padding: 30px; max-width: 700px; margin: 0 auto; text-align: left; }
-        .highlight { color: #d9534f; font-weight: bold; }
-        .btn-back { display: inline-block; margin-top: 30px; color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; }
-        .btn-back:hover { color: #d9534f; border-color: #d9534f; }
+        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; text-align: center; margin: 0; padding: 0; }
+        .header { padding: 60px 20px; text-transform: uppercase; letter-spacing: 4px; }
+        .red-line { height: 2px; background-color: #d9534f; width: 85%; margin: 0 auto; box-shadow: 0 0 15px #d9534f; }
+        
+        .container { max-width: 900px; margin: 50px auto; padding: 20px; }
+        .card { background: #0a0a0a; border: 1px solid #222; padding: 40px; border-radius: 20px; margin-bottom: 30px; transition: 0.3s; text-align: left; }
+        .card:hover { border-color: #d9534f; box-shadow: 0 0 20px rgba(217, 83, 79, 0.2); }
+        
+        h2 { color: #d9534f; text-transform: uppercase; letter-spacing: 2px; margin-top: 0; }
+        .benefit-text { color: #888; line-height: 1.8; font-size: 1.1rem; }
+        .highlight { color: #fff; font-weight: bold; }
+        
+        .btn-main { display: inline-block; text-decoration: none; color: white; border: 2px solid #d9534f; padding: 18px 45px; border-radius: 50px; font-weight: bold; text-transform: uppercase; background: #d9534f; margin-top: 30px; box-shadow: 0 0 20px rgba(217, 83, 79, 0.5); transition: 0.3s; }
+        .btn-main:hover { background: transparent; color: #d9534f; }
     </style>
 </head>
 <body>
 
-    <h1>REGISTRATION & BENEFITS</h1>
-
-    <div class="info-box">
-        <p><span class="highlight">MISSION:</span> No money gained for me, robotics knowledge gained for the student!</p>
-        <p><span class="highlight">COST:</span> $0 Tuition. Instruction is completely free. Parents only cover the hardware part costs.</p>
-        <p><span class="highlight">BENEFIT 1:</span> Hands-on engineering with ESP32 and real sensors.</p>
-        <p><span class="highlight">BENEFIT 2:</span> Students keep their robots to continue learning at home.</p>
-        <p><span class="highlight">BENEFIT 3:</span> Advanced curriculum covering SLAM and autonomous logic.</p>
+    <div class="header">
+        <p style="font-size: 0.8rem; color: #d9534f; letter-spacing: 2px;">Registration Portal</p>
+        <h1 style="font-size: 2.5rem; margin: 10px 0; letter-spacing: 6px;">APEX ADMISSION</h1>
     </div>
 
-    <a href="mailto:your-email@example.com?subject=Apex Botics Registration" class="highlight" style="display:block; margin-top:30px; font-size:1.5rem; text-decoration:none;">[ CLICK HERE TO INITIALIZE CONTACT ]</a>
+    <div class="red-line"></div>
 
-    <a href="index.html" class="btn-back">BACK TO HOME</a>
+    <div class="container">
+        <div class="card">
+            <h2>THE APEX MISSION</h2>
+            <p class="benefit-text">"No money gained for me, <span class="highlight">robotics knowledge gained for the student!</span>"</p>
+            <p class="benefit-text">This is a unique, student-led initiative. I offer a full professional-grade curriculum with <span class="highlight">Zero Tuition Fees</span>. Parents only cover the direct cost of the hardware components.</p>
+        </div>
+
+        <div class="card">
+            <h2>PROGRAM BENEFITS</h2>
+            <ul style="color: #888; line-height: 2;">
+                <li>Complete <span class="highlight">ESP32</span> and sensor integration.</li>
+                <li>Advanced <span class="highlight">SLAM</span> and Intelligent Navigation systems.</li>
+                <li>Keep the robot you build for future development.</li>
+                <li>No corporate overhead—just pure engineering.</li>
+            </ul>
+        </div>
+
+        <a href="mailto:your-email@example.com?subject=Apex Botics Registration" class="btn-main">Initialize Registration</a>
+        
+        <br><br>
+        <a href="index.html" style="color: #444; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-top: 40px; display: inline-block;">Back to Laboratory</a>
+    </div>
 
 </body>
 </html>
