@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Apex Botics</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; }
-        nav { background: #222; color: white; padding: 1rem; text-align: center; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        .container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { color: #0056b3; text-align: center; }
-        .benefit-box { background: #eef7ff; border-radius: 8px; padding: 20px; margin: 20px 0; border-left: 6px solid #0056b3; }
-        .free-badge { background: #d9534f; color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold; }
-        .course-list { margin: 20px 0; }
-        .btn-large { display: block; background: #28a745; color: white; text-align: center; padding: 20px; text-decoration: none; font-size: 1.5rem; font-weight: bold; border-radius: 8px; margin-top: 30px; }
-        .btn-large:hover { background: #218838; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #000; color: #fff; line-height: 1.6; }
+        nav { background: #1a1a1a; padding: 1rem; text-align: center; border-bottom: 2px solid #d9534f; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; }
+        .container { max-width: 800px; margin: 50px auto; padding: 40px; background: #111; border: 1px solid #333; }
+        h1, h2 { color: #d9534f; text-transform: uppercase; text-align: center; }
+        .benefit-box { border-left: 5px solid #d9534f; padding: 20px; background: #1a1a1a; margin: 25px 0; }
+        .mission-text { font-style: italic; color: #d9534f; font-size: 1.2rem; text-align: center; margin: 20px 0; }
+        .btn-reg { display: block; background: #d9534f; color: #fff; text-align: center; padding: 20px; text-decoration: none; font-size: 1.3rem; font-weight: bold; text-transform: uppercase; margin-top: 40px; transition: 0.3s; }
+        .btn-reg:hover { background: #b9433f; }
+        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -22,38 +22,30 @@
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About the Founder</a>
-    <a href="register.html">Register Now!</a>
+    <a href="register.html">Register Now</a>
 </nav>
 
 <div class="container">
-    <h1>Join the Next Cohort</h1>
-    
-    <div class="benefit-box">
-        <h3>The Apex Commitment: <span class="free-badge">FREE TUITION</span></h3>
-        <p>I believe robotics should be for everyone. I don't charge a single cent for my teaching. You only pay for the cost of the hardware parts, which the student keeps forever.</p>
+    <h1>COURSE REGISTRATION</h1>
+
+    <div class="mission-text">
+        "No money gained for me, robotics knowledge gained for the student!"
     </div>
 
-    <h2>Why Join This Class?</h2>
+    <div class="benefit-box">
+        <h3 style="margin-top: 0;">THE APEX COMMITMENT: FREE TUITION</h3>
+        <p>Advanced engineering should be accessible. I provide all instruction and curriculum for <strong>$0</strong>. You only cover the cost of the hardware parts, which stay with the student forever.</p>
+    </div>
+
+    <h2>WHY ENROLL?</h2>
     <ul>
-        <li><strong>Hands-On Engineering:</strong> No kits that do the work for you. We wire and code from scratch.</li>
-        <li><strong>Real Industry Tools:</strong> Learn Python, C++, and ESP32—the same tech used in real products.</li>
-        <li><strong>Redmond Based:</strong> Connect with other local students interested in high-level STEM.</li>
-        <li><strong>Keep Your Robot:</strong> Since you buy the parts, your creation stays with you to keep upgrading.</li>
+        <li><strong>Hands-On Learning:</strong> We wire, solder, and code from the ground up.</li>
+        <li><strong>Industry Tech:</strong> Master Python, C++, and ESP32 microcontrollers.</li>
+        <li><strong>Redmond Based:</strong> Connect with local STEM-focused peers.</li>
+        <li><strong>Keep the Tech:</strong> The student owns every sensor and motor they use.</li>
     </ul>
 
-    <h2>Current Courses</h2>
-    <p>We are currently accepting expressions of interest for:</p>
-    <ul>
-        <li><strong>Alpha Level:</strong> Basics of circuitry & obstacle avoidance.</li>
-        <li><strong>Beta Level:</strong> Advanced motor control & logic.</li>
-        <li><strong>Prime Level:</strong> SLAM & Autonomous Navigation.</li>
-    </ul>
-
-    <a href="mailto:your-email@example.com?subject=Apex Botics Registration" class="btn-large">Click to Initialize Registration</a>
-    
-    <p style="text-align:center; margin-top:15px; font-size: 0.9rem; color: #666;">
-        (Note: You will receive an email with the hardware parts list and class schedule.)
-    </p>
+    <a href="mailto:your-email@example.com?subject=Apex Botics Registration" class="btn-reg">Initialize Registration</a>
 </div>
 
 </body>
