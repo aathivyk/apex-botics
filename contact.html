@@ -27,13 +27,14 @@
         input, select, textarea { 
             width: 100%; padding: 14px; margin: 10px 0 25px 0; background: #111; 
             border: 1px solid #333; color: white; border-radius: 8px; box-sizing: border-box; font-size: 0.9rem;
+            font-family: 'Inter', sans-serif;
         }
         input:focus, select:focus, textarea:focus { border-color: #d9534f; outline: none; }
         
         .submit-btn { 
             width: 100%; background: #d9534f; color: white; border: none; padding: 18px; 
             font-weight: bold; text-transform: uppercase; cursor: pointer; border-radius: 50px; 
-            transition: 0.3s; font-size: 1rem;
+            transition: 0.3s; font-size: 1rem; margin-top: 10px;
         }
         .submit-btn:hover { background: #fff; color: #000; }
 
@@ -81,25 +82,8 @@
                 <label class="label">Parent / Guardian Name</label>
                 <input type="text" name="parent_name" required placeholder="Enter full name">
 
+                <label class="label">Contact Email</label>
+                <input type="email" name="email" required placeholder="email@example.com">
+
                 <label class="label">Student Full Name & Age</label>
-                <input type="text" name="student_data" required placeholder="e.g., John Doe, 13">
-
-                <label class="label">Course Interest</label>
-                <select name="course">
-                    <option value="alpha">Apex Alpha (Beginner)</option>
-                    <option value="beta">Apex Beta (Intermediate)</option>
-                    <option value="prime">Apex Prime (Advanced)</option>
-                </select>
-
-                <label class="label">Technical Experience</label>
-                <textarea name="experience" style="background:#111; color:white; border:1px solid #333; width:100%; height:80px; border-radius:8px; padding:10px;" placeholder="Optional: Any prior coding or robotics history..."></textarea>
-
-                <button type="submit" class="submit-btn">Initialize Registration</button>
-            </form>
-            
-            <a href="index.html" class="back-link">← Return to Laboratory Home</a>
-        </div>
-    </div>
-
-</body>
-</html>
+                <input type="text" name="student
